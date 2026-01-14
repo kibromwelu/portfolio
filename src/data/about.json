@@ -1,0 +1,14 @@
+{
+  "name": "Kibrom",
+  "headline": "Full-Stack Software Engineer",
+  "description": "I'm a full-stack developer who builds robust, scalable web applications. I specialize in React, Node.js, and cloud deployments. I enjoy designing clean APIs, optimizing database queries, and building delightful front-end experiences.",
+  "location": "Addis Ababa, Ethiopia",
+  "email": "kibromwelu12@gmail.com",
+  "resume": "/assets/Kibrom_Welu_Resume.pdf",
+  "socials": {
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "twitter": "https://twitter.com/yourhandle"
+  },
+  "photo": "/assets/profile.jpg"
+}

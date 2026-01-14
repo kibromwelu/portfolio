@@ -1,0 +1,17 @@
+[
+  { "name": "Node.js", "icon": "🟢" },
+  { "name": "Express.js", "icon": "🚏" },
+  { "name": "Nest.js", "icon": "🎯" },
+  { "name": "React.js", "icon": "⚛️" },
+  { "name": "Vue.js", "icon": "🟩" },
+  { "name": "Tailwind CSS", "icon": "💨" },
+  { "name": "Python", "icon": "🐍" },
+  { "name": "MongoDB", "icon": "🍃" },
+  { "name": "PostgreSQL", "icon": "🐘" },
+  { "name": "MySQL", "icon": "🟦" },
+  { "name": "Laravel", "icon": "🔴" },
+  { "name": "Docker", "icon": "🐳" },
+  { "name": "Kubernetes", "icon": "☸️" },
+  { "name": "Nginx", "icon": "🧩" },
+  { "name": "AWS", "icon": "☁️" }
+]
