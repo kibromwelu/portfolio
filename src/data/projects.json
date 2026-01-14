@@ -1,8 +1,27 @@
 [
   {
+    "title": "GohoChat",
+    "description": "Chat application which allows 1:1 inquiries, group chat and Open chats",
+    "tech": [
+      "NestJS",
+      "MariaDB",
+      "React.js",
+      "TypeORM"
+    ],
+    "image": "/assets/admini.farmgrid.PNG",
+    "demo": "#",
+    "github": "#"
+  },
+  {
     "title": "Publ",
     "description": "Email service app",
-    "tech": ["NestJS", "PostgreSQL", "React.js","AWS SES","AWS S3"],
+    "tech": [
+      "NestJS",
+      "PostgreSQL",
+      "React.js",
+      "AWS SES",
+      "AWS S3"
+    ],
     "image": "/assets/admini.farmgrid.PNG",
     "demo": "#",
     "github": "#"
@@ -10,7 +29,11 @@
   {
     "title": "TripFlow",
     "description": "Trip management system for fleet tracking and payment control.",
-    "tech": ["ExpressJS", "MongoDB", "Vue.js"],
+    "tech": [
+      "ExpressJS",
+      "MongoDB",
+      "Vue.js"
+    ],
     "image": "/assets/admini.farmgrid.PNG",
     "demo": "#",
     "github": "#"
@@ -18,7 +41,12 @@
   {
     "title": "Macha",
     "description": "Ride healing system for ride sharing.",
-    "tech": ["NestJS", "PostgreSQL", "Vue.js", "RabbitMQ"],
+    "tech": [
+      "NestJS",
+      "PostgreSQL",
+      "Vue.js",
+      "RabbitMQ"
+    ],
     "image": "/assets/Macha.png",
     "demo": "#",
     "github": "#"
@@ -26,7 +54,14 @@
   {
     "title": "Everyone's farm",
     "description": "Product selling platform for farmers. Developed for korean client",
-    "tech": ["NestJS", "PostgreSQL", "ReactJS","Flutter", "RabbitMQ","AWS S3"],
+    "tech": [
+      "NestJS",
+      "PostgreSQL",
+      "ReactJS",
+      "Flutter",
+      "RabbitMQ",
+      "AWS S3"
+    ],
     "image": "/assets/Everyonesfarm.png",
     "demo": "#",
     "github": "#"
@@ -34,7 +69,12 @@
   {
     "title": "WaterRegen",
     "description": "Fish farm management system. Developed for korean client",
-    "tech": ["NestJS", "PostgreSQL", "Flutter", "RabbitMQ"],
+    "tech": [
+      "NestJS",
+      "PostgreSQL",
+      "Flutter",
+      "RabbitMQ"
+    ],
     "image": "/assets/waterregen.PNG",
     "demo": "#",
     "github": "#"
@@ -42,7 +82,12 @@
   {
     "title": "Sheqlee",
     "description": "Freelancers working space",
-    "tech": ["ExpressJS", "MongodDB", "ReactJS", "RabbitMQ"],
+    "tech": [
+      "ExpressJS",
+      "MongodDB",
+      "ReactJS",
+      "RabbitMQ"
+    ],
     "image": "/assets/sheqlee.PNG",
     "demo": "#",
     "github": "#"

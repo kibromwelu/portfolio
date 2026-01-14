@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-900 text-white fixed w-full z-10 shadow">
       <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-teal-400">Kibrom.dev</h1>
+        <h1 className="text-2xl font-bold text-teal-400">Kibrom Welu</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
