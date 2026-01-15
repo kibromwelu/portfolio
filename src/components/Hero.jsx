@@ -7,9 +7,12 @@
 //     </section>
 //   );
 // }
-import React from "react";
+import React, { useState } from "react";
+import aboutData from "../data/about.json";
 
 export default function Hero() {
+  const [showContactModal, setShowContactModal] = useState(false);
+
   return (
     <section
       id="home"
@@ -19,7 +22,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: "url('/assets/hero-bg.jpg')",
+          backgroundImage: `url(${process.env.PUBLIC_URL}/assets/hero-bg.jpg)`,
           filter: "brightness(0.5)",
         }}
       ></div>
@@ -39,17 +42,71 @@ export default function Hero() {
           >
             View My Work
           </a>
-          <a
-            href="#contact"
+          <button
+            onClick={() => setShowContactModal(true)}
             className="px-8 py-3 border border-white text-white rounded-md hover:bg-white hover:text-black transition"
           >
             Contact Me
-          </a>
+          </button>
         </div>
       </div>
 
       {/* Gradient overlay bottom (optional) */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+      {/* Contact Modal */}
+      {showContactModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+          <div className="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full relative border border-gray-700">
+            <button
+              onClick={() => setShowContactModal(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-teal-400 transition"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <h3 className="text-2xl font-bold text-teal-400 mb-6 font-mono">Let's Connect</h3>
+            <div className="space-y-4 text-left">
+              <div className="flex items-center gap-3 text-gray-300">
+                <span className="text-teal-400 font-semibold w-20">Phone:</span>
+                <span>{aboutData.phone}</span>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <span className="text-teal-400 font-semibold w-20">Email:</span>
+                <a
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${aboutData.email}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-teal-400 transition"
+                >
+                  {aboutData.email}
+                </a>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <span className="text-teal-400 font-semibold w-20">LinkedIn:</span>
+                <a href={aboutData.socials.linkedin} target="_blank" rel="noreferrer" className="hover:text-teal-400 transition truncate">
+                  {aboutData.socials.linkedin}
+                </a>
+              </div>
+              <div className="flex items-center gap-3 text-gray-300">
+                <span className="text-teal-400 font-semibold w-20">Facebook:</span>
+                <a href={aboutData.socials.facebook} target="_blank" rel="noreferrer" className="hover:text-teal-400 transition truncate">
+                  {aboutData.socials.facebook}
+                </a>
+              </div>
+            </div>
+            <div className="mt-8 text-center">
+              <button
+                onClick={() => setShowContactModal(false)}
+                className="bg-teal-400 text-black px-6 py-2 rounded-md hover:bg-teal-500 transition font-semibold"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
