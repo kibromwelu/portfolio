@@ -4,7 +4,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white fixed w-full z-10 shadow">
+    <nav className="bg-gray-900 text-white fixed w-full z-50 shadow">
       <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-teal-400">Kibrom Welu</h1>
 
@@ -42,8 +42,8 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-gray-900 border-t border-gray-800">
-          <div className="flex flex-col space-y-4 px-6 py-4">
+        <div className="md:hidden absolute top-full right-0 w-1/3 max-w-xs bg-black border-t border-gray-800 shadow-xl rounded-bl-xl">
+          <div className="flex flex-col space-y-4 px-6 py-6 text-right">
             <a href="#skills" className="hover:text-teal-400 transition" onClick={() => setIsOpen(false)}>Skills</a>
             <a href="#about" className="hover:text-teal-400 transition" onClick={() => setIsOpen(false)}>About</a>
             <a href="#projects" className="hover:text-teal-400 transition" onClick={() => setIsOpen(false)}>Projects</a>
