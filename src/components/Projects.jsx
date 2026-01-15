@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {projectsData.map((proj, index) => (
           <div key={index} className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-teal-400/40 transition">
-            <img src={proj.image} alt={proj.title} className="w-full h-48 object-contain bg-gray-900" />
+            <img src={process.env.PUBLIC_URL + proj.image} alt={proj.title} className="w-full h-48 object-contain bg-gray-900" />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
               <p className="text-gray-300 mb-4">{proj.description}</p>
