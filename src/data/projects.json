@@ -47,7 +47,7 @@
       "Vue.js",
       "RabbitMQ"
     ],
-    "image": "/assets/Macha.png",
+    "image": "/assets/macha.PNG",
     "demo": "#",
     "github": "#"
   },
@@ -62,7 +62,7 @@
       "RabbitMQ",
       "AWS S3"
     ],
-    "image": "/assets/Everyonesfarm.png",
+    "image": "/assets/Everyonesfarm.PNG",
     "demo": "#",
     "github": "#"
   },
@@ -75,7 +75,7 @@
       "Flutter",
       "RabbitMQ"
     ],
-    "image": "/assets/waterRegen.PNG",
+    "image": "/assets/waterregen.PNG",
     "demo": "#",
     "github": "#"
   },
